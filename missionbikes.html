@@ -14264,7 +14264,13 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>在這裏輸入地址</p>
+<p><br />
+在這裏輸入地址</p>
+<p>Google Colab 中可用</p>
+<p>from geopy.geocoders import Nominatim<br />
+geolocator = Nominatim(timeout=10, user_agent = "dlab.berkeley.edu-workshop")<br />
+ctr = list (geolocator.geocode('台灣台北市南海路'))[1]</p>
+<p>但是地址只能輸入到街道 (不能輸入門牌號)</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
